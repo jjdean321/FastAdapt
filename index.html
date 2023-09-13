@@ -47,30 +47,10 @@
 <div style="border: none; width:80%; margin: 0 auto;">
 <body>
     <h2 align="center">TOWARDS HIGH-PERFORMANCE AND LOW-LATENCY FEATURE-BASED SPEAKER ADAPTATION OF CONFORMER SPEECH RECOGNITION SYSTEMS</h2>
-
     <a href="#sectionI">I. Experimental Setup and Results</a><br>
     <a href="#sectionII">II. Reference</a>
-    <h3> <a name="sectionI"> I. Experimental Setup and Results</a> </h3>
-    <div style="border: none; width:60%; margin: 0 auto;">
-    <img border="0" src="architectures.png" alt="architectures of speech enhancement front-end" height="10%">
-    </div>
-    <ul>
-        <li> In the architecture-1, speech separaiton (based on the audio-visual mask-based MVDR [1]) followed by dereverberation (based on the audio-visual DNN-WPE or SpecM [2]).</li>
-        <li> In the architecture-2, speech dereverberation (based on the audio-visual DNN-WPE or SpecM) followed by separation (based on the audio-visual mask-based MVDR).</li>
-        <li> In the architecture-3, joint speech separation & dereverberation using the audio-visual mask-based WPD. </li>
-        <li> The internal structural details of audio-visual mask-based MVDR, DNN-WPE, SpecM and mask-based WPD as well as the Visual Front-end modules can be seen in  Fig. 1 and Fig. 3 of the submitted paper.  </li>
-    </ul>
-    <h3> <a name="sectionII">II. End-to-end Audio-visual Mulit-channel Speech Separaiton, Dereverberation and Recognition System </a> </h3>
-    <div style="border: none; width:70%; margin: 0 auto;">
-    <img border="0" src="asr.png" alt="architectures of speech enhancement front-end" height="20%">
-    </div>
-    <p style="line-height:100%" align="justify"> <b> Three fine-tuning methods are investigated When training the systems:</b> </p>
-    <ul>
-        <li> Only fine-tuning the back-end ASR component using the enhanced speech outputs while the front-end remains unchanged. </li>
-        <li> End-to-end jointly fine-tuning the entire system including the speech enhancement front-end and the recognition back-end components using the ASR cost function. </li>
-        <li> End-to-end jointly fine-tuning the entire system using a multi-task criterion interpolation between the speech enhancement and recognition cost functions. </li>
-    </ul>
-    <h3> <a name="sectionIII">III. Experimental Setup and Results</a></h3>
+  
+    <h3> <a name="sectionI">I. Experimental Setup and Results</a></h3>
     <div style="border: none; width:100%; margin: 0 auto;">
     <h4> A. Experimental setup </h4>
         <ul>
